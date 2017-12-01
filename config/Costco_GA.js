@@ -1,6 +1,6 @@
 GA_TRACE_CODE = "UA-110096492-2";
 
-var _local_debug = false;
+var _local_debug = true;
 
 if(_local_debug == false){
   CSS_URL = "https://localhost/GA-project/config/Costco_GA.css";

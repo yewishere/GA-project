@@ -16,7 +16,8 @@ var exec = function(){
   auto_set_user_id();
   
   //腳本
-  ga_mouse_over_event(".menu-trigger","click");
+  ga_mouse_over_event(".menu-trigger","Hover Menu");
+  ga_mouse_click_event(".menu-trigger","Click Menu");
 }
 
 

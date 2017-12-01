@@ -18,3 +18,16 @@ var exec = function(){
   //腳本
   ga_mouse_over_event(".menu-trigger","click");
 }
+
+
+
+
+// --------------------------------------
+
+$(function () {
+    $.getScript(LIB_URL, function () {
+        ga_setup(function () {
+            exec();
+        });
+    });
+});

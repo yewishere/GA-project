@@ -21,9 +21,12 @@ var exec = function(){
   //腳本
   ga_mouse_over_event(".menu-trigger","Classification_Menu_Hover");
   ga_mouse_click_event(".menu-trigger","Classification_Menu_Click");
-  
   ga_mouse_over_event(".nbc-container","Other_Menu_Hover");
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
+  
+  ga_mouse_over_event(".nbc-mobile.auto","Other_Menu_Hover");
+  ga_mouse_click_event(".nbc-mobile.auto","Other_Menu_Click");
+  
   ga_mouse_over_event(".topmenu","Top_Menu_Hover");
   ga_mouse_click_event(".topmenu","Top_Menu_Click");
   ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");

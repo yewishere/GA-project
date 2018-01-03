@@ -28,8 +28,7 @@ var exec = function(){
   ga_mouse_click_event(".show-sub-menu","OtOOOOck");
   
   
-  ga_mouse_over_event(".nbc-mobile.auto","Other_Menu_Hover");
-  ga_mouse_click_event(".nbc-mobile.auto","Other_Menu_Click");
+
   
   ga_mouse_over_event(".topmenu","Top_Menu_Hover");
   ga_mouse_click_event(".topmenu","Top_Menu_Click");

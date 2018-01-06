@@ -36,8 +36,8 @@ var exec = function(){
   //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
   
   for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
-    ga_mouse_over_event("#top_menu"+i+".not('.show-sub-menu').not('#1-1-0')","Tgop_Menu_Hover");
-    ga_mouse_click_event("#top_menu"+i+".not('.show-sub-menu').not('#1-1-0')","Top_Menu_Click");
+    ga_mouse_over_event("#top_menu"+i:not('.show-sub-menu'):not('#1-1-0'),"Tgop_Menu_Hover");
+    ga_mouse_click_event("#top_menu"+i:not('.show-sub-menu'):not('#1-1-0'),"Top_Menu_Click");
   }
   
 }

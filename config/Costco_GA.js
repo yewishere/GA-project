@@ -35,10 +35,10 @@ var exec = function(){
   //ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
   //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
   
-  for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
-    ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
-    ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
-  };
+ // for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
+ //   ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
+  //  ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
+ // };
   
   ga_mouse_over_event(".show-sub-menu:contains('影音電視')","Hover");
 	ga_mouse_over_event(".show-sub-menu:contains('影音 / 電子周邊 / 樂器')","Hover");

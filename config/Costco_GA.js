@@ -65,7 +65,7 @@ $(function() {
       for(var j=0;j<len2;j++){
           var len3 = $('#theMenu').find('#top_menu'+k).find('#sub_menu'+j).length;
           for(var i=0;i<len3;i++){
-              $('#top_menu'+k).('#sub_menu'+j).eq(i).attr('id', 'subsub_menu'+i);
+              $('#theMenu').find('#top_menu'+k).find('#sub_menu'+j).eq(i).attr('id', 'subsub_menu'+i);
           };
       };
     };

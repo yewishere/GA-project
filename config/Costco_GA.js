@@ -35,10 +35,10 @@ var exec = function(){
   //ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
   //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
   
-  //for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
-    ga_mouse_over_event("#top_menu0:not(.show-sub-menu):not(#1-1-0)","Top_Menu_Hover");
-   // ga_mouse_click_event("#top_menu"+i:not('.show-sub-menu'):not('#1-1-0'),"Top_Menu_Click");
-  //};
+  for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
+    ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
+    ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
+  };
 }
 
 
@@ -47,12 +47,33 @@ var exec = function(){
 // --------------------------------------
 $(function() {  
     var len =  $('#theMenu').find('.topmenu').length; 
-
     for(var i=0;i<len;i++){
-        $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);
+        $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);    
     };
+    
+    var len =  $('#theMenu').find('.topmenu').length; 
+    for(var j=0;j<len;j++){
+        var len2 = $('#theMenu').find('#top_menu'+j).length;
+        for(var i=0;i<len2;i++){
+            $('#theMenu').find('#top_menu'+j).eq(i).attr('id', 'sub_menu'+i);
+        };
+    };
+    
+    var len =  $('#theMenu').find('.topmenu').length; 
+    for(var k=0;k<len;k++){
+      var len2 = $('#theMenu').find('#top_menu'+k).length;
+      for(var j=0;j<len2;j++){
+          var len3 = $('#theMenu').find('#top_menu'+k).find('#sub_menu'+j).length;
+          for(var i=0;i<len3;i++){
+              $('#top_menu'+k).('#sub_menu'+j).eq(i).attr('id', 'subsub_menu'+i);
+          };
+      };
+    };
+  
 });
 
+  
+  
 $(function () {
     $.getScript(LIB_URL, function () {
         ga_setup(function () {

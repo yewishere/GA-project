@@ -20,23 +20,20 @@ var exec = function(){
   
   //腳本
   
-  //首頁_MENU
+  //-------------首頁---------------
+  
+  //分類選單
   ga_mouse_over_event(".menu-trigger","Classification_Menu_Hover");
   ga_mouse_click_event(".menu-trigger","Classification_Menu_Click");
-  
+  //其餘主選單
   ga_mouse_over_event(".nbc-container","Other_Menu_Hover");
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
-  
-  ga_mouse_over_event(".show-sub-menu","Sub_Menu_Hover");
-  ga_mouse_click_event(".show-sub-menu","Sub_Menu_Click");
-  
-  
-
-  
-  //ga_mouse_over_event(".topmenu","Top_Menu_Hover");
-  //ga_mouse_click_event(".topmenu","Top_Menu_Click");
-  ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
-  ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
+  //分類選單子選單
+  //ga_mouse_over_event(".show-sub-menu.hidden-xs.hidden-sm","Sub_Menu_Hover");
+  //ga_mouse_click_event(".show-sub-menu.hidden-xs.hidden-sm","Sub_Menu_Click");
+  //分類選單子子選單
+  //ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
+  //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
   
   
 }
@@ -52,4 +49,12 @@ $(function () {
             exec();
         });
     });
+});
+
+$(function() {
+    var len = $(".show-sub-menu.hidden-xs.hidden-sm").find("a").length; 
+
+    for(var i=0;i<len;i++){
+        $(".show-sub-menu.hidden-xs.hidden-sm").find('a').eq(i).attr('id', 'sub_menu'+i);
+    };
 });

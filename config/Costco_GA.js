@@ -35,6 +35,10 @@ var exec = function(){
   //ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
   //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
   
+  for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
+    ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
+    ga_mouse_click_event("#1-1-0","Top_Menu_Click");
+  }
   
 }
 
@@ -51,10 +55,10 @@ $(function () {
     });
 });
 
-$(function() {
-    var len = $(".show-sub-menu.hidden-xs.hidden-sm").find("a").length; 
+$(function() {  
+    var len =  $('#theMenu').find('.topmenu').length; 
 
     for(var i=0;i<len;i++){
-        $(".show-sub-menu.hidden-xs.hidden-sm").find('a').eq(i).attr('id', 'sub_menu'+i);
+        $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);
     };
 });

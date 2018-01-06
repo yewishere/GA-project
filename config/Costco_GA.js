@@ -19,13 +19,16 @@ var exec = function(){
   auto_set_user_id();
   
   //腳本
+  
+  //首頁_MENU
   ga_mouse_over_event(".menu-trigger","Classification_Menu_Hover");
   ga_mouse_click_event(".menu-trigger","Classification_Menu_Click");
+  
   ga_mouse_over_event(".nbc-container","Other_Menu_Hover");
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
   
-  ga_mouse_over_event(".show-sub-menu","OOOOOer");
-  ga_mouse_click_event(".show-sub-menu","OtOOOOck");
+  ga_mouse_over_event(".show-sub-menu","Sub_Menu_Hover");
+  ga_mouse_click_event(".show-sub-menu","Sub_Menu_Click");
   
   
 

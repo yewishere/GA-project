@@ -30,23 +30,21 @@ var exec = function(){
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
   
   
- // for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
- //   ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
-  //  ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
- // };
-  //ga_mouse_over_event(".topmenu","Hover");
-/*  ga_mouse_over_event(".show-sub-menu","Menu_Hover");
-  ga_mouse_over_event('.topmenu:contains("所有  影音電視")','Third_Layer_Menu_Hover');
+
+  ga_mouse_over_event(".show-sub-menu","Menu_Hover");
+/*  ga_mouse_over_event('.topmenu:contains("所有  影音電視")','Third_Layer_Menu_Hover');
   ga_mouse_over_event('.topmenu:contains("60-69 吋")','Third_Layer_Menu_Hover');
   ga_mouse_over_event('.topmenu:contains("50-59 吋")','Third_Layer_Menu_Hover');				
   ga_mouse_over_event('.topmenu:contains("40-49 吋")','Third_Layer_Menu_Hover');				
   ga_mouse_over_event('.topmenu:contains("39 吋以下")','Third_Layer_Menu_Hover');		
   ga_mouse_over_event('.topmenu:contains("電視壁掛架")','Third_Layer_Menu_Hover');					
 */				
-  ga_mouse_over_event(".show-sub-menu:contains('影音電視')","Hover");
-  ga_mouse_over_event(".show-sub-menu:contains('影音 / 電子周邊 / 樂器')","Hover");
-		
-			
+  ga_mouse_over_event("#101-2-0:contains('所有  影音電視')","Hover");
+  ga_mouse_over_event("#101-2-0:contains('60-69 吋')","Hover");
+  ga_mouse_over_event("#101-2-0:contains('50-59 吋')","Hover");		
+  ga_mouse_over_event("#101-2-0:contains('40-49 吋')","Hover");		
+  ga_mouse_over_event("#101-2-0:contains('39 吋以下')","Hover");		
+  ga_mouse_over_event("#101-2-0:contains('電視壁掛架')","Hover");		
 						
 						
 				

@@ -40,7 +40,6 @@ var exec = function(){
   ga_mouse_over_event('.topmenu:contains("電視壁掛架")','Third_Layer_Menu_Hover');					
 */
   //三層分類選單
-
   var len_topmenu =  $('#theMenu').find('.topmenu').length; 	
   for(var i=0;i<len_topmenu;i++){
 	var len_submenu = $('#top_menu'+i).find('ul').length;
@@ -59,7 +58,9 @@ var exec = function(){
   ga_mouse_over_event("#subsub_menu4","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu5","SubSub_Menu_Hover");		
 	*/												
-				
+  //下拉式選單
+  ga_mouse_over_event('#sortOptions1'+':contains("相關商品")');
+  
 
 }
 

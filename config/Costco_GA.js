@@ -78,14 +78,8 @@ $(function() {
     for(var i=0;i<len2;i++){
 	$('#101-2-0').find('li').eq(i).attr('id','subsub_menu'+i);
     };
-
-    for(var j=0;j<len;j++){
-	var len3 = $('#top_menu'+j).find('ul').length;
-	for(var i=0;i<len3;i++){
-	    $('#top_menu'+j).find('ul').find('li').eq(i).attr('id','sub_menu'+i);
-	};
-    };
-*/	
+*/
+    //主選單添加id	
     var len_topmenu =  $('#theMenu').find('.topmenu').length; 
     for(var i=0;i<len_topmenu;i++){
         $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);
@@ -98,8 +92,10 @@ $(function() {
 	    };
 	};
     };
-    
-	
+    //下拉式選單添加id
+    for(var i=0;i<len;i++){
+        $('#sortOptions1').find('option').eq(i).attr('id','comboBox_option'+i);
+    };	
 	
 
 });

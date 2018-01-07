@@ -34,9 +34,9 @@ var exec = function(){
  //   ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
   //  ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
  // };
-  ga_mouse_over_event(".topmenu","Hover");
-  //ga_mouse_over_event(".show-sub-menu","Menu_Hover");
-  //ga_mouse_over_event("#101-2-0","Third_Layer_Menu_Hover");
+  //ga_mouse_over_event(".topmenu","Hover");
+  ga_mouse_over_event(".show-sub-menu","Menu_Hover");
+  ga_mouse_over_event("#101-2-0","Third_Layer_Menu_Hover");
   
 }
 

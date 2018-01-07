@@ -60,7 +60,7 @@ $(function() {
     for(var i=0;i<len;i++){
         $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);    
     };
-    
+/*    
     var len2 = $('#101-2-0').find('li').length;
     for(var i=0;i<len2;i++){
 	$('#101-2-0').find('li').eq(i).attr('id','subsub_menu'+i);
@@ -72,28 +72,23 @@ $(function() {
 	    $('#top_menu'+j).find('ul').find('li').eq(i).attr('id','sub_menu'+i);
 	};
     };
-	
-	
-	
-  /*  var len =  $('#theMenu').find('.topmenu').length; 
-    for(var j=0;j<len;j++){
-        var len2 = $('#theMenu').find('#top_menu'+j).length;
-        for(var i=0;i<len2;i++){
-            $('#theMenu').find('#top_menu'+j).eq(i).attr('id', 'sub_menu'+i);
-        };
+*/	
+    var len_topmenu =  $('#theMenu').find('.topmenu').length; 
+    for(var i=0;i<len_topmenu;i++){
+        $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);
+	    
+	len_submenu = $('#top_menu'+i).find('ul').length;
+	for(var k=0;k<len_submenu;k++){
+	    len_subsubmenu = $('#top_menu'+i).find('ul').eq(k).find('li').length;
+	    for(z=0;z<subsubmenu;z++){
+	        $('#top_menu'+i).find('ul').eq(k).find('li').eq(z).attr('id', 'subsub_menu'+z);
+	    };
+	};
     };
     
-    var len =  $('#theMenu').find('.topmenu').length; 
-    for(var k=0;k<len;k++){
-      var len2 = $('#theMenu').find('#top_menu'+k).length;
-      for(var j=0;j<len2;j++){
-          var len3 = $('#theMenu').find('#top_menu'+k).find('#sub_menu'+j).length;
-          for(var i=0;i<len3;i++){
-              $('#theMenu').find('#top_menu'+k).find('#sub_menu'+j).eq(i).attr('id', 'subsub_menu'+i);
-          };
-      };
-    };
-  */
+	
+	
+
 });
 
   

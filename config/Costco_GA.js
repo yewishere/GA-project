@@ -97,8 +97,7 @@ $(function() {
     for(var i=0;i<len_option;i++){
         $('#sortOptions1').find('option').eq(i).attr('id','comboBox_option'+i);
     };	
-	
-
+    
 });
 
   

@@ -65,6 +65,16 @@ $(function() {
     for(var i=0;i<len2;i++){
 	$('#101-2-0').find('li').eq(i).attr('id','subsub_menu'+i);
     };
+
+    for(var j=0;j<len;j++){
+	var len3 = $('#top_menu'+j).find('ul').length;
+	for(var i=0;i<len3;i++){
+	    $('#top_menu'+j).find('ul').find('li').eq(0).attr('id','sub_menu'+i);
+	};
+    };
+	
+	
+	
   /*  var len =  $('#theMenu').find('.topmenu').length; 
     for(var j=0;j<len;j++){
         var len2 = $('#theMenu').find('#top_menu'+j).length;

@@ -71,13 +71,13 @@ var exec = function(){
        
     //首頁橫幅廣告
     //首頁橫幅廣告點擊
-    ga_mouse_click_event('.owl-wrapper-outer','Home_Banner_owl-wrapper-outer_Click')
+    ga_mouse_click_event('.lazyOwl.js-responsive-carousel-image','Home_Banner_lazyOwl_Click')
     //首頁橫幅廣告滑動
-    ga_mouse_over_event('.owl-wrapper-outer','Home_Banner_owl-wrapper-outer_Hover')
+    ga_mouse_over_event('.lazyOwl.js-responsive-carousel-image','Home_Banner_lazyOwl_Hover')
     //首頁橫幅廣告右箭頭紐點擊
     ga_mouse_click_event('.owl-next','Good_Information_Simple_Left_owl-next_Click')
     //首頁橫幅廣告左箭頭紐點擊
-    ga_mouse_click_event('.owl-prev','Good_Information_Simple_Right_owl-prev_Click')    	
+    ga_mouse_click_event('.owl-prev','Good_Information_Simple_Right_owl-prev_Click')	
     
     //首頁大標
     //首頁大標點擊

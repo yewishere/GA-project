@@ -28,21 +28,14 @@ var exec = function(){
   //其餘主選單
   ga_mouse_over_event(".nbc-container","Other_Menu_Hover");
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
-  //分類選單子選單
-  //ga_mouse_over_event(".show-sub-menu.hidden-xs.hidden-sm","Sub_Menu_Hover");
-  //ga_mouse_click_event(".show-sub-menu.hidden-xs.hidden-sm","Sub_Menu_Click");
-  //分類選單子子選單
-  //ga_mouse_over_event("#1-1-0","Sub_Menu_Hover");
-  //ga_mouse_click_event("#1-1-0","Sub_Menu_Hover");
+  
   
  // for(var i=0; i<$('#theMenu').find('.topmenu').length; i++){
  //   ga_mouse_over_event("#top_menu"+i,"Top_Menu_Hover");
   //  ga_mouse_click_event("#top_menu"+i,"Top_Menu_Click");
  // };
  //ga_mouse_over_event(".topmenu","Hover");
- ga_mouse_over_event(".show-sub-menu","HHover");	
-  //ga_mouse_over_event(".show-sub-menu:contains('影音電視')","Hover");
-  //ga_mouse_over_event(".show-sub-menu:contains('影音 / 電子周邊 / 樂器')","Hover");
+  ga_mouse_over_event(".show-sub-menu","HHover");	
 }
 
 

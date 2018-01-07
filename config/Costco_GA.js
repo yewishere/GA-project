@@ -61,9 +61,10 @@ var exec = function(){
   //下拉式選單
   var len_option = $('#sortOptions1').find('option').length;
   for(var i=0;i<len_option;i++){
-  	ga_mouse_over_event('#comboBox_option'+i,'ComboBox_Item_Hover');
+  	ga_mouse_over_event("#comboBox_option"+i,"ComboBox_Item_Hover");
+	ga_mouse_click_event("#comboBox_option"+i,"ComboBox_Item_Hover");
   };
-
+ 
 }
 
 

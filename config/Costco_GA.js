@@ -93,7 +93,8 @@ $(function() {
 	};
     };
     //下拉式選單添加id
-    for(var i=0;i<len;i++){
+    var len_option = $('#sortOptions1').find('option').length;
+    for(var i=0;i<len_option;i++){
         $('#sortOptions1').find('option').eq(i).attr('id','comboBox_option'+i);
     };	
 	

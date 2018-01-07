@@ -77,10 +77,10 @@ $(function() {
         $('#theMenu').find('.topmenu').eq(i).attr('id', 'top_menu'+i);
 	    
 	var len_submenu = $('#top_menu'+i).find('ul').length;
-	for(var k=0;k<len_submenu;k++){
+	for(var k=1;k<len_submenu;k++){
 	    var len_subsubmenu = $('#top_menu'+i).find('ul').eq(k).find('li').length;
 	    for(z=0;z<len_subsubmenu;z++){
-	        $('#top_menu'+i).find('ul').eq(k).find('li').eq(z).attr('id', 'subsub_menu'+i*100+k*10+z);
+	        $('#top_menu'+i).find('ul').eq(k).find('li').eq(z).attr('id', 'subsub_menu'+i+k+z);
 	    };
 	};
     };

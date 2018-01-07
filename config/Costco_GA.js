@@ -64,7 +64,7 @@ var exec = function(){
   	ga_mouse_over_event("#comboBox_option"+i,"ComboBox_Item_Hover");
 	ga_mouse_click_event("#comboBox_option"+i,"ComboBox_Item_Click");
   };
-  ga_mouse_click_event("#sortOption1","ComboBox_Click");	
+  ga_mouse_click_event("#sortOptions1","ComboBox_Click");	
 }
 
 

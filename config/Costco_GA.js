@@ -36,8 +36,20 @@ var exec = function(){
  // };
   //ga_mouse_over_event(".topmenu","Hover");
   ga_mouse_over_event(".show-sub-menu","Menu_Hover");
-  ga_mouse_over_event("#101-2-0","Third_Layer_Menu_Hover");
-  
+  ga_mouse_over_event('.show-sub-menu:contains("所有  影音電視")','Third_Layer_Menu_Hover');
+  ga_mouse_over_event('.show-sub-menu:contains("60-69 吋")','Third_Layer_Menu_Hover');
+	ga_mouse_over_event('.show-sub-menu:contains("50-59 吋")','Third_Layer_Menu_Hover');				
+	ga_mouse_over_event('.show-sub-menu:contains("40-49 吋")','Third_Layer_Menu_Hover');				
+	ga_mouse_over_event('.show-sub-menu:contains("39 吋以下")','Third_Layer_Menu_Hover');		
+	ga_mouse_over_event('.show-sub-menu:contains("電視壁掛架")','Third_Layer_Menu_Hover');					
+				
+
+		
+			
+						
+						
+				
+
 }
 
 

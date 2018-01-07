@@ -69,7 +69,7 @@ var exec = function(){
   var len_breadcrumb = $('.breadcrumb').find('li').length;
   for(var i=0;i<len_breadcrumb;i++){
 	ga_mouse_hover_event('#breadcrumb_item'+i, 'Breadcrumb_Item_Hover'); 
-	ga_mouse_hover_event('#breadcrumb_item'+i, 'Breadcrumb_Item_Hover'); 
+	ga_mouse_click_event('#breadcrumb_item'+i, 'Breadcrumb_Item_Click'); 
   };	
 	
 }

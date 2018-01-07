@@ -50,21 +50,28 @@ var exec = function(){
 		};	
   	};
   };
-	/*
-  ga_mouse_over_event("#subsub_menu0","SubSub_Menu_Hover");
+/*  ga_mouse_over_event("#subsub_menu0","SubSub_Menu_Hover");
   ga_mouse_over_event("#subsub_menu1","SubSub_Menu_Hover");
   ga_mouse_over_event("#subsub_menu2","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu3","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu4","SubSub_Menu_Hover");		
-  ga_mouse_over_event("#subsub_menu5","SubSub_Menu_Hover");		
-	*/												
+  ga_mouse_over_event("#subsub_menu5","SubSub_Menu_Hover");		*/
+	
   //下拉式選單
   var len_option = $('#sortOptions1').find('option').length;
   for(var i=0;i<len_option;i++){
   	ga_mouse_over_event("#comboBox_option"+i,"ComboBox_Item_Hover");
 	ga_mouse_click_event("#comboBox_option"+i,"ComboBox_Item_Click");
   };
-  ga_mouse_click_event("#sortOptions1","ComboBox_Click");	
+  ga_mouse_click_event("#sortOptions1","ComboBox_Click");
+	
+  //麵包屑導航
+  var len_breadcrumb = $('.breadcrumb').find('li').length;
+  for(var i=0;i<len_breadcrumb;i++){
+	ga_mouse_hover_event('#breadcrumb_item'+i, 'Breadcrumb_Item_Hover'); 
+	ga_mouse_hover_event('#breadcrumb_item'+i, 'Breadcrumb_Item_Hover'); 
+  };	
+	
 }
 
 
@@ -95,12 +102,18 @@ $(function() {
 	    };
 	};
     };
+    
     //下拉式選單添加id
     var len_option = $('#sortOptions1').find('option').length;
     for(var i=0;i<len_option;i++){
         $('#sortOptions1').find('option').eq(i).attr('id','comboBox_option'+i);
     };	
     
+    //麵包屑導航添加id
+    var len_breadcrumb = $('.breadcrumb').find('li').length;
+    for(var i=0;i<len_breadcrumb;i++){
+    	$('.breadcrumb').find('li').eq(i).attr('id','breadcrumb_item'+i);
+    };
 });
 
   

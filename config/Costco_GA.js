@@ -30,7 +30,7 @@ var exec = function(){
   ga_mouse_click_event(".nbc-container","Other_Menu_Click");
   
   
-
+  //一層、二層分類選單
   ga_mouse_over_event(".show-sub-menu","Menu_Hover");
 /*  ga_mouse_over_event('.topmenu:contains("所有  影音電視")','Third_Layer_Menu_Hover');
   ga_mouse_over_event('.topmenu:contains("60-69 吋")','Third_Layer_Menu_Hover');
@@ -38,14 +38,27 @@ var exec = function(){
   ga_mouse_over_event('.topmenu:contains("40-49 吋")','Third_Layer_Menu_Hover');				
   ga_mouse_over_event('.topmenu:contains("39 吋以下")','Third_Layer_Menu_Hover');		
   ga_mouse_over_event('.topmenu:contains("電視壁掛架")','Third_Layer_Menu_Hover');					
-*/				
+*/
+  //三層分類選單
+
+  var len_topmenu =  $('#theMenu').find('.topmenu').length; 	
+  for(var i=0;i<len_topmenu;i++){
+	var len_submenu = $('#top_menu'+i).find('ul').length;
+  	for(var k=1;k<len_submenu;k++){
+		var len_subsubmenu = $('#top_menu'+i).find('ul').eq(k).find('li').length;
+  		for(var z=0;z<len_subsubmenu;z++){
+			ga_mouse_over_event("#subsub_menu"+i+k+z,"SubSub_Menu_Hover");
+		};	
+  	};
+  };
+	/*
   ga_mouse_over_event("#subsub_menu0","SubSub_Menu_Hover");
   ga_mouse_over_event("#subsub_menu1","SubSub_Menu_Hover");
   ga_mouse_over_event("#subsub_menu2","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu3","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu4","SubSub_Menu_Hover");		
   ga_mouse_over_event("#subsub_menu5","SubSub_Menu_Hover");		
-													
+	*/												
 				
 
 }

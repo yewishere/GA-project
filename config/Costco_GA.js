@@ -39,12 +39,12 @@ var exec = function(){
   ga_mouse_over_event('.topmenu:contains("39 吋以下")','Third_Layer_Menu_Hover');		
   ga_mouse_over_event('.topmenu:contains("電視壁掛架")','Third_Layer_Menu_Hover');					
 */				
-  ga_mouse_over_event("#101-2-0:contains('所有  影音電視')","Hover");
-  ga_mouse_over_event("#101-2-0:contains('60-69 吋')","Hover");
-  ga_mouse_over_event("#101-2-0:contains('50-59 吋')","Hover");		
-  ga_mouse_over_event("#101-2-0:contains('40-49 吋')","Hover");		
-  ga_mouse_over_event("#101-2-0:contains('39 吋以下')","Hover");		
-  ga_mouse_over_event("#101-2-0:contains('電視壁掛架')","Hover");		
+  ga_mouse_over_event("#101-2-0:contains('所有  影音電視')","1Hover");
+  ga_mouse_over_event("#101-2-0:contains('60-69 吋')","2Hover");
+  ga_mouse_over_event("#101-2-0:contains('50-59 吋')","3Hover");		
+  ga_mouse_over_event("#101-2-0:contains('40-49 吋')","4Hover");		
+  ga_mouse_over_event("#101-2-0:contains('39 吋以下')","5Hover");		
+  ga_mouse_over_event("#101-2-0:contains('電視壁掛架')","6Hover");		
 						
 						
 				

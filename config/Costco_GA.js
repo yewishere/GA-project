@@ -69,7 +69,7 @@ $(function() {
     for(var j=0;j<len;j++){
 	var len3 = $('#top_menu'+j).find('ul').length;
 	for(var i=0;i<len3;i++){
-	    $('#top_menu'+j).find('ul').find('li').eq(0).attr('id','sub_menu'+i);
+	    $('#top_menu'+j).find('ul').find('li').eq(i).attr('id','sub_menu'+i);
 	};
     };
 	

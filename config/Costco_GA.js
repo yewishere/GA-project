@@ -59,8 +59,10 @@ var exec = function(){
   ga_mouse_over_event("#subsub_menu5","SubSub_Menu_Hover");		
 	*/												
   //下拉式選單
-  ga_mouse_over_event('#sortOptions1'+':contains("相關商品")');
-  
+  var len_option = $('#sortOptions1').find('option').length;
+  for(var i=0;i<len_option;i++){
+  	ga_mouse_over_event('#comboBox_option'+i,'ComboBox_Item_Hover');
+  };
 
 }
 

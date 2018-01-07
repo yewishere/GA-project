@@ -63,7 +63,7 @@ $(function() {
     
     var len2 = $('#101-2-0').find('li').length;
     for(var i=0;i<len2;i++){
-	$('#101-2-0').eq(i).attr('id','subsub_menu'+i);
+	$('#101-2-0').find('li').eq(i).attr('id','subsub_menu'+i);
     };
   /*  var len =  $('#theMenu').find('.topmenu').length; 
     for(var j=0;j<len;j++){

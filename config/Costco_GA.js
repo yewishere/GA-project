@@ -74,7 +74,8 @@ var exec = function(){
 	
   //比較產品
   ga_mouse_click_event('product-compare-widget__compare-btn','Compare_Button_Click');
-	
+  ga_mouse_over_event('product-compare-widget__compare-btn','Compare_Button_Hover');
+  	
 }
 
 

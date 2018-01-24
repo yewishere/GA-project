@@ -1,17 +1,17 @@
-GA_TRACE_CODE = "UA-110096492-2";
+GA_TRACE_CODE = "UA-110664059-1";
 
 var _local_debug = true;
 
 if(_local_debug == false){
-  CSS_URL = "https://localhost/GA-project/config/Costco_GA.css";
+  CSS_URL = "https://localhost/GA-project/config/lib.css";
   LIB_URL = "https://localhost/GA-project/ga_inject_lib.js";
   
   //Costco_GA.js 直接加入在網頁head上
   console.log("[LOCAL TEST MODE]");
 }
 else {
-  CSS_URL = "https://medo972283.github.io/GA-project/config/Costco_GA.css";
-  LIB_URL = "https://medo972283.github.io/GA-project/ga_inject_lib.js";
+  CSS_URL = "https://yewishere.github.io/GA-project/config/lib.css";
+  LIB_URL = "https://yewishere.github.io/GA-project/ga_inject_lib.js";
   
 }
 

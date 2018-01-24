@@ -9,7 +9,8 @@
  */
 if (typeof(GA_TRACE_CODE) === "undefined") {
     //GA_TRACE_CODE = "UA-89833109-1";
-    GA_TRACE_CODE = "UA-110096492-2";
+    //GA_TRACE_CODE = "UA-110096492-2";
+	GA_TRACE_CODE = "UA-110664059-1";
 		
 	
 }
